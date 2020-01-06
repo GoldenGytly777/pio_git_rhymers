@@ -6,22 +6,26 @@ public class DefaultCountingOutRhymer {
     private static final int RETURN=-1;
     private final int[] NUMBERS = new int[ROZMIAR];
 
-    public int total = RETURN;
+    private int total = RETURN;
+
+    public int getTotal() {
+        return total;
+    }
 
     public void countIn(int in) {
         if (!isFull())
             NUMBERS[++total] = in;
     }
 
-    public boolean callCheck() {
+    boolean callCheck() {
         return total == RETURN;
     }
 
-    public boolean isFull() {
+    boolean isFull() {
         return total == 11;
     }
 
-    protected int peekaboo() {
+    int peekaboo() {
         if (callCheck())
             return RETURN;
         return NUMBERS[total];
