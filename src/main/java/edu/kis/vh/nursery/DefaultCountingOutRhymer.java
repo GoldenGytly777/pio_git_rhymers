@@ -2,7 +2,7 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-    private static final int ROZMIAR=10;
+    private static final int ROZMIAR=12;
     private static final int RETURN=-1;
     private final int[] NUMBERS = new int[ROZMIAR];
 
